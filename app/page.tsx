@@ -7,7 +7,7 @@ import Services from "@/components/Services";
 import Metrics from "@/components/Metrics";
 import Projects from "@/components/Projects";
 import Publications from "@/components/Publications";
-import Testimonials from "@/components/Testimonials";
+import Highlights from "@/components/Highlights";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
       <Metrics />
       <Projects />
       <Publications />
-      <Testimonials />
+      <Highlights />
       <Contact />
     </main>
   );
