@@ -42,10 +42,11 @@ export default function Contact() {
           </a>
         </div>
 
-        <p className="text-gray-500 text-xs mt-16">
-          © 2026 Sam Adeyemi. Built with Next.js, TypeScript &amp; Tailwind CSS.
-        </p>
-        <p className="text-gray-600 text-xs mt-1">v2.1 — Unbeatable Portfolio</p>
+       <div className="mt-16 pt-8 border-t border-white/5">
+  <p className="text-muted-foreground text-xs">
+    © 2026 Sam Adeyemi. Built with Next.js, TypeScript & Tailwind CSS.
+  </p>
+</div>
       </motion.div>
     </section>
   );
