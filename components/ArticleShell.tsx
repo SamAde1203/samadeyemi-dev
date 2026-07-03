@@ -17,6 +17,12 @@ import {
   Lock,
   Database,
   FileJson,
+  Boxes,
+  Recycle,
+  Siren,
+  TestTube,
+  Coins,
+  Wallet,
 } from "lucide-react";
 
 /* ------------------------------- data types ------------------------------- */
@@ -51,6 +57,12 @@ const ICONS = {
   commit: GitCommit,
   lock: Lock,
   database: Database,
+  boxes: Boxes,
+  recycle: Recycle,
+  siren: Siren,
+  testtube: TestTube,
+  coins: Coins,
+  wallet: Wallet,
 } as const;
 
 /* ------------------------------- utilities -------------------------------- */

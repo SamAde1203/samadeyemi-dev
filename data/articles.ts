@@ -89,4 +89,58 @@ export const articles: ArticleMeta[] = [
     description:
       "Prompt injection isn't the root problem — trust boundaries are. Why the model sits outside the trusted core and never decides what the platform does.",
   },
+  {
+    slug: "langchain",
+    part: 10,
+    title: "Why We Didn't Use LangChain in Production (And What We Built Instead)",
+    focus: "Frameworks",
+    readTime: "10 min",
+    description:
+      "Evaluating LangChain, CrewAI, and AutoGen taught us an important lesson — use frameworks for capabilities, but own the architecture that differentiates your platform.",
+  },
+  {
+    slug: "monolith-to-multi-agent",
+    part: 11,
+    title: "From Monolith to Multi-Agent: The Refactoring We Should Have Done Earlier",
+    focus: "Refactoring",
+    readTime: "11 min",
+    description:
+      "Simplicity has a hidden expiration date. How PHHM outgrew its single-agent design and rebuilt into six specialists without breaking production.",
+  },
+  {
+    slug: "prompt-incident",
+    part: 12,
+    title: "The Production Incident That Changed How We Deploy AI Prompts",
+    focus: "Post-Mortem",
+    readTime: "14 min",
+    description:
+      "No alert fired. Nothing crashed. A post-mortem on the single sentence that quietly degraded our Care Agent — and how the telemetry found it.",
+  },
+  {
+    slug: "testing-without-llms",
+    part: 13,
+    title: "Testing AI Systems Without Calling a Single LLM",
+    focus: "Testing",
+    readTime: "10 min",
+    description:
+      "Thousands of regression tests in CI/CD with a zero-pound API bill — mockable interfaces, dependency injection, golden responses, and deterministic workflows.",
+  },
+  {
+    slug: "cost-engineering",
+    part: 14,
+    title: "Cost Engineering for Production AI — Part 1: Measure",
+    focus: "Cost • Measure",
+    readTime: "13 min",
+    description:
+      "You can't optimize costs you don't measure. Cost per workflow, token accounting, and why context — not model pricing — is usually the biggest expense.",
+  },
+  {
+    slug: "cost-optimization",
+    part: 15,
+    title: "The Cost of Production AI — Part 2: Optimize",
+    focus: "Cost • Optimize",
+    readTime: "10 min",
+    description:
+      "The cheapest AI call is the one you never make — prompt compression, intelligent routing, caching, and parallel execution that made PHHM economically sustainable.",
+  },
 ];
