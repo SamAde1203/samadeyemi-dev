@@ -28,9 +28,10 @@ const highlights = [
     icon: Layers,
     text: "Built multiple AI-powered SaaS platforms",
   },
-  {
+    {
   icon: BookOpen,
   text: "Author of the 15-part PHHM Journal on production AI engineering",
+  },
 ];
 
 export default function Highlights() {
