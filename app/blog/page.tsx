@@ -5,7 +5,7 @@ import { articles } from "@/data/articles";
 export const metadata: Metadata = {
   title: "PHHM Journal — Production AI Engineering | Sam Adeyemi",
   description:
-    "A nine-part engineering series on building production multi-agent AI systems: architecture, FastAPI, configuration, state, prompt versioning, guardrails, observability, evaluation, and security.",
+	"A fifteen-part engineering series on building production multi-agent AI systems..."
 };
 
 export default function BlogHome() {
@@ -23,9 +23,9 @@ export default function BlogHome() {
             Engineering essays on production AI
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-[var(--muted)]">
-            A nine-part series on building multi-agent AI systems that survive production —
-            architecture, APIs, configuration, state, versioning, guardrails, observability,
-            evaluation, and security. Best read in order.
+            A fifteen-part series on building multi-agent AI systems that survive production —
+			from architecture and APIs through guardrails, observability, cost engineering,
+			and the war stories in between. Best read in order.
           </p>
         </section>
 
