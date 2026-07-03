@@ -1,21 +1,145 @@
-import { MetadataRoute } from "next";
+import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://samadeyemi.dev";
+  const now = new Date();
   return [
-    { url: base, lastModified: new Date(), priority: 1 },
-    { url: `${base}/#about`, lastModified: new Date() },
-    { url: `${base}/#services`, lastModified: new Date() },
-    { url: `${base}/#experience`, lastModified: new Date() },
-    { url: `${base}/#metrics`, lastModified: new Date() },
-    { url: `${base}/#projects`, lastModified: new Date() },
-    { url: `${base}/#publications`, lastModified: new Date() },
-    { url: `${base}/#testimonials`, lastModified: new Date() },
-    { url: `${base}/#contact`, lastModified: new Date() },
-    { url: `${base}/projects/phhm`, lastModified: new Date(), priority: 0.9 },
-    { url: `${base}/projects/tdct`, lastModified: new Date(), priority: 0.8 },
-    { url: `${base}/projects/trialforge`, lastModified: new Date(), priority: 0.8 },
-    { url: `${base}/projects/cv-builder`, lastModified: new Date(), priority: 0.8 },
-	{ url: `${base}/projects/alphawings`, lastModified: new Date(), priority: 0.8 },
+    {
+      url: "https://www.samadeyemi.dev",
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 1,
+    },
+    {
+      url: "https://www.samadeyemi.dev/blog",
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    },
+    {
+      url: "https://www.samadeyemi.dev/blog/architecture",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: "https://www.samadeyemi.dev/blog/fastapi",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: "https://www.samadeyemi.dev/blog/configuration",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: "https://www.samadeyemi.dev/blog/state-management",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: "https://www.samadeyemi.dev/blog/prompt-versioning",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: "https://www.samadeyemi.dev/blog/guardrails",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: "https://www.samadeyemi.dev/blog/observability",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: "https://www.samadeyemi.dev/blog/evaluation",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: "https://www.samadeyemi.dev/blog/security",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: "https://www.samadeyemi.dev/blog/langchain",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: "https://www.samadeyemi.dev/blog/monolith-to-multi-agent",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: "https://www.samadeyemi.dev/blog/prompt-incident",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: "https://www.samadeyemi.dev/blog/testing-without-llms",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: "https://www.samadeyemi.dev/blog/cost-engineering",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: "https://www.samadeyemi.dev/blog/cost-optimization",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: "https://www.samadeyemi.dev/projects/alphawings",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      url: "https://www.samadeyemi.dev/projects/cv-builder",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      url: "https://www.samadeyemi.dev/projects/phhm",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      url: "https://www.samadeyemi.dev/projects/seedtracker",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      url: "https://www.samadeyemi.dev/projects/tdct",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
+      url: "https://www.samadeyemi.dev/projects/trialforge",
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
   ];
 }

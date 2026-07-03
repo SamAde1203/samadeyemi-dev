@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { Mail, Linkedin, Github, FileText, ArrowRight } from "lucide-react";
@@ -19,7 +19,7 @@ export default function Contact() {
         </p>
 
         <div className="flex justify-center gap-6 mb-10">
-          <a href="mailto:samoadeyemi@yahoo.co.uk" className="p-4 rounded-full border border-cyan-500/20 bg-cyan-500/5 hover:bg-cyan-500/10 transition-colors">
+          <a href="mailto:sam@samadeyemi.dev" className="p-4 rounded-full border border-cyan-500/20 bg-cyan-500/5 hover:bg-cyan-500/10 transition-colors">
             <Mail className="text-cyan-300" />
           </a>
           <a href="https://linkedin.com/in/samadeyemi-apex" target="_blank" className="p-4 rounded-full border border-cyan-500/20 bg-cyan-500/5 hover:bg-cyan-500/10 transition-colors">
@@ -37,14 +37,14 @@ export default function Contact() {
           <a href="#projects" className="flex items-center gap-2 border border-white/20 px-6 py-3 rounded-lg hover:border-cyan-400 transition-colors">
             View My Work
           </a>
-          <a href="mailto:samoadeyemi@yahoo.co.uk" className="flex items-center gap-2 border border-white/20 px-6 py-3 rounded-lg hover:border-cyan-400 transition-colors">
+          <a href="mailto:sam@samadeyemi.dev" className="flex items-center gap-2 border border-white/20 px-6 py-3 rounded-lg hover:border-cyan-400 transition-colors">
             Let&apos;s Talk <ArrowRight size={16} />
           </a>
         </div>
 
        <div className="mt-16 pt-8 border-t border-white/5">
   <p className="text-muted-foreground text-xs">
-    © 2026 Sam Adeyemi. Built with Next.js, TypeScript & Tailwind CSS.
+    Â© 2026 Sam Adeyemi. Built with Next.js, TypeScript & Tailwind CSS.
   </p>
 </div>
       </motion.div>

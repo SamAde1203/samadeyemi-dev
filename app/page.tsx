@@ -8,6 +8,7 @@ import Metrics from "@/components/Metrics";
 import Projects from "@/components/Projects";
 import Publications from "@/components/Publications";
 import Highlights from "@/components/Highlights";
+import Writing from "@/components/Writing";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <Projects />
       <Publications />
       <Highlights />
+	  <Writing />
       <Contact />
     </main>
   );

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Inter, Fira_Code } from "next/font/google";
 import "./globals.css";
 
@@ -7,7 +7,7 @@ const firaCode = Fira_Code({ subsets: ["latin"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://samadeyemi.dev"),
-  title: "Sam Adeyemi — Software Engineer, Generative AI",
+  title: "Sam Adeyemi â€” Software Engineer, Generative AI",
   description:
     "Python, FastAPI, APIs & AI Workflow Systems. Building production systems that reduce errors by 73% and accelerate workflows by 85%.",
   keywords:
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Sam Adeyemi" }],
   creator: "Sam Adeyemi",
   openGraph: {
-    title: "Sam Adeyemi — Software Engineer, Generative AI",
+    title: "Sam Adeyemi â€” Software Engineer, Generative AI",
     description:
       "Building production AI systems that transform complex ideas into scalable software. 85% faster workflows, 73% fewer errors.",
     url: "https://samadeyemi.dev",
@@ -27,13 +27,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Sam Adeyemi — Generative AI Software Engineer",
+        alt: "Sam Adeyemi â€” Generative AI Software Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sam Adeyemi — Software Engineer, Generative AI",
+    title: "Sam Adeyemi â€” Software Engineer, Generative AI",
     description:
       "Building production AI systems that transform complex ideas into scalable software.",
     images: ["/og-image.png"],
@@ -72,10 +72,10 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Sam Adeyemi",
-              jobTitle: "Software Engineer — Generative AI",
+              jobTitle: "Software Engineer â€” Generative AI",
               url: "https://samadeyemi.dev",
               image: "https://samadeyemi.dev/headshot.jpg",
-              email: "mailto:samoadeyemi@yahoo.co.uk",
+              email: "mailto:sam@samadeyemi.dev",
               sameAs: [
                 "https://github.com/SamAde1203",
                 "https://linkedin.com/in/samadeyemi-apex",

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, FileText, ArrowRight } from "lucide-react";
@@ -20,14 +20,14 @@ export default function Hero() {
         >
           <span className="inline-flex items-center gap-2 pill px-4 py-1.5 rounded-full text-xs text-cyan-300 border border-cyan-500/20 bg-cyan-500/5 mb-6">
             <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-            Available immediately — Open to remote and UK-based roles
+            Available immediately â€” Open to remote and UK-based roles
           </span>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-3 text-white">
             Hi, I&apos;m <span className="bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent">Sam Adeyemi</span>
           </h1>
           <p className="text-2xl md:text-3xl font-semibold text-gray-300 mb-6">
-            Software Engineer — Generative AI
+            Software Engineer â€” Generative AI
           </p>
 
           <div className="flex gap-8 mb-6">
@@ -65,7 +65,7 @@ export default function Hero() {
             <a href="https://linkedin.com/in/samadeyemi-apex" target="_blank" className="text-gray-400 hover:text-cyan-300 transition-colors">
               <Linkedin size={20} />
             </a>
-            <a href="mailto:samoadeyemi@yahoo.co.uk" className="text-gray-400 hover:text-cyan-300 transition-colors">
+            <a href="mailto:sam@samadeyemi.dev" className="text-gray-400 hover:text-cyan-300 transition-colors">
               <Mail size={20} />
             </a>
           </div>
@@ -82,7 +82,7 @@ export default function Hero() {
             <div className="absolute inset-4 rounded-full border border-violet-500/20" />
             <img
               src="/headshot.jpg"
-              alt="Sam Adeyemi — Generative AI Software Engineer"
+              alt="Sam Adeyemi â€” Generative AI Software Engineer"
               className="absolute inset-6 rounded-full object-cover w-[calc(100%-3rem)] h-[calc(100%-3rem)] shadow-2xl shadow-cyan-500/20"
             />
           </div>
