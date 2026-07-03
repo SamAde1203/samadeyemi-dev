@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import { Mail, Linkedin, Github, FileText, ArrowRight } from "lucide-react";
@@ -12,7 +12,7 @@ export default function Contact() {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <p className="font-mono text-cyan-400 text-sm mb-2">07 / CONTACT</p>
+        <p className="font-mono text-cyan-400 text-sm mb-2">08 / CONTACT</p>
         <h2 className="text-3xl font-bold mb-4 text-white">Let&apos;s Build Something Great</h2>
         <p className="text-gray-400 mb-10">
           Available immediately. Open to remote and UK-based roles.
@@ -44,7 +44,7 @@ export default function Contact() {
 
        <div className="mt-16 pt-8 border-t border-white/5">
   <p className="text-muted-foreground text-xs">
-    Â© 2026 Sam Adeyemi. Built with Next.js, TypeScript & Tailwind CSS.
+    © 2026 Sam Adeyemi. Built with Next.js, TypeScript & Tailwind CSS.
   </p>
 </div>
       </motion.div>
