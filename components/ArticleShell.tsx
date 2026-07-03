@@ -334,10 +334,10 @@ export default function ArticleShell({ article }: { article: ArticleData }) {
                 Read next
               </a>
               <a
-                href="/blog/categories"
+                href="/#projects"
                 className="rounded-full border border-[var(--line)] px-5 py-3 text-sm font-semibold"
               >
-                Browse categories
+                View my work
               </a>
             </div>
           </div>
