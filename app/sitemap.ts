@@ -23,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const projectSlugs = [
     "alphawings",
-    "cv-builder",
+    "council-services",
     "phhm",
     "seedtracker",
     "tdct",

@@ -29,14 +29,14 @@ const flagships = [
 
 const projects = [
   {
-    slug: "cv-builder",
-    tag: "10+ tools • 100% AI-driven",
-    title: "AI CV Builder Pro™",
+    slug: "council-services",
+    tag: "26 tests • 0 axe violations • WCAG 2.2 AA",
+    title: "Council Services on Drupal 11",
     description:
-      "Full-stack AI career system with 10+ specialised tools — CV Builder, Interview Coach, Company Intelligence, Salary Negotiator, and more.",
-    stack: ["Next.js", "React", "TypeScript", "Tailwind", "AI Integration"],
+      "A custom Drupal 11 module and accessible theme for a fictional council. Residents enter a postcode to find their bin days, verified live against postcodes.io.",
+    stack: ["Drupal 11", "PHP", "Twig", "PHPUnit", "GitHub Actions"],
     demo: "#",
-    code: "https://github.com/SamAde1203/phhm-suite",
+    code: "https://github.com/SamAde1203/council-services-drupal",
   },
   {
     slug: "alphawings",
