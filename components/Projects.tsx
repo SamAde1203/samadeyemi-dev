@@ -7,10 +7,10 @@ import { Github, ExternalLink } from "lucide-react";
 const flagships = [
   {
     slug: "seedtracker",
-    tag: "247 orgs • ₦2.4B+ tracked • Live in production",
+    tag: "8 churches • ₦1.5M+ tracked this year • Live in production",
     title: "SeedTracker",
     description:
-      "Multi-tenant fintech SaaS platform for organisational financial management — dual-gateway payments, offline-first sync, WhatsApp-native notifications and AI engagement predictions.",
+      "Multi-tenant church finance platform, live with churches across Nigeria — dual-gateway payments, offline-first sync, WhatsApp-native notifications and AI engagement predictions.",
     stack: ["Next.js", "React", "TypeScript", "Paystack", "Flutterwave", "Claude AI"],
     demo: "https://seedtracker.ng",
     code: "https://github.com/SamAde1203",

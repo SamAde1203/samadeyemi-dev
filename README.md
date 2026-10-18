@@ -7,7 +7,7 @@ Personal portfolio site showcasing full-stack and AI engineering projects, built
 
 ## Featured Projects
 
-- **SeedTracker** — Multi-tenant fintech SaaS for organisational financial management, serving 247+ organisations with ₦2.4B+ tracked in transactions.
+- **SeedTracker** — Multi-tenant church finance platform, live with 8 churches across Nigeria and ₦1.5M+ tracked this year.
 - **PHHM Multi-Agent AI Platform** — Six-agent Generative AI orchestration system reducing manual processing time by 85%.
 - **Alpha Wings AI (Post Booster)** — GPT-4-powered SaaS generating multi-platform social content, serving 500+ users.
 - **Council Services on Drupal 11** — Custom Drupal 11 module and WCAG 2.2 AA theme for a fictional council's bin day finder, with 26 PHPUnit tests and automated accessibility checks in CI ([code](https://github.com/SamAde1203/council-services-drupal)).

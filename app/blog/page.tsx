@@ -1,6 +1,6 @@
 ﻿import Link from "next/link";
 import type { Metadata } from "next";
-import { articles } from "@/data/articles";
+import { articles, drupalArticles } from "@/data/articles";
 
 export const metadata: Metadata = {
   title: "PHHM Journal — Production AI Engineering | Sam Adeyemi",
@@ -97,6 +97,40 @@ export default function BlogHome() {
               </div>
             </Link>
           ))}
+        </section>
+
+        {/* standalone Drupal posts */}
+        <section className="mt-20">
+          <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-[var(--surface2)] px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--muted)]">
+            Drupal Notes • Public-sector web
+          </p>
+          <h2 className="font-['Instrument_Serif',Georgia,serif] text-4xl leading-tight sm:text-5xl">
+            Building council services in Drupal 11
+          </h2>
+          <p className="mt-4 max-w-2xl text-base text-[var(--muted)]">
+            Notes from building an accessible bin day finder with a custom Drupal 11 module and theme.
+          </p>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {drupalArticles.map((article) => (
+              <Link
+                key={article.slug}
+                href={`/blog/${article.slug}`}
+                className="group flex flex-col rounded-3xl border border-[var(--line)] bg-[var(--surface)] p-6 shadow-[var(--shadow)] transition hover:-translate-y-1 hover:shadow-xl"
+              >
+                <div className="mb-4 flex items-center justify-between gap-2">
+                  <span className="inline-flex rounded-full border border-[var(--line)] bg-[var(--surface2)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--muted)]">
+                    {article.focus}
+                  </span>
+                  <span className="text-xs font-medium text-[var(--muted)]">{article.readTime}</span>
+                </div>
+                <h3 className="font-['Instrument_Serif',Georgia,serif] text-2xl leading-snug transition group-hover:text-[var(--accent)]">
+                  {article.title}
+                </h3>
+                <p className="mt-3 flex-1 text-sm leading-6 text-[var(--muted)]">{article.description}</p>
+                <div className="mt-6 text-sm font-semibold text-[var(--accent)]">Read more →</div>
+              </Link>
+            ))}
+          </div>
         </section>
       </div>
     </main>

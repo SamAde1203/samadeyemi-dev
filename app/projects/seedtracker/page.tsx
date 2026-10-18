@@ -15,7 +15,7 @@ const stack = [
 const highlights = [
   { icon: Wallet, name: "Dual-Gateway Payments", role: "Paystack and Flutterwave integration with automatic failover — card, bank transfer, USSD and mobile money, so no payment is ever lost." },
   { icon: MessageSquare, name: "WhatsApp-First Notifications", role: "Instant giving receipts, reminders and reports delivered via WhatsApp Business API — no app download required." },
-  { icon: ShieldCheck, name: "Multi-Tenant Security", role: "Row-level database isolation ensures organisations never see each other's data, with a tamper-proof audit trail and dual-control approvals." },
+  { icon: ShieldCheck, name: "Multi-Tenant Security", role: "Row-level database isolation ensures churches never see each other's data, with a tamper-proof audit trail and dual-control approvals." },
   { icon: Smartphone, name: "Offline-First Architecture", role: "Transactions queue locally on unreliable connections and sync automatically once connectivity returns." },
   { icon: TrendingUp, name: "AI Engagement Predictions", role: "Claude AI analyses giving patterns to predict disengagement risk and generates personalised outreach recommendations." },
   { icon: Users, name: "Self-Service Member Portal", role: "Every user gets a personal portal with history, digital QR card, and downloadable statements — zero admin overhead." },
@@ -42,9 +42,9 @@ export default function SeedTrackerCaseStudy() {
           SeedTracker
         </h1>
         <p className="text-gray-400 text-lg max-w-2xl mb-8">
-          A multi-tenant fintech SaaS platform for organisational financial management —
-          processing over &#8358;2.4B in transactions across 247 active organisations, with
-          real-time reconciliation, dual-gateway payments, and AI-driven engagement analytics.
+          A multi-tenant church finance platform, live with 8 churches across Nigeria and
+          over &#8358;1.5M tracked this year, with real-time reconciliation, dual-gateway
+          payments, and AI-driven engagement analytics.
         </p>
 
         <div className="flex flex-wrap gap-2 mb-10">
@@ -67,9 +67,9 @@ export default function SeedTrackerCaseStudy() {
 
       <section className="grid md:grid-cols-4 gap-6 mb-20">
         {[
-          { value: "₦2.4B+", label: "Transaction volume tracked" },
-          { value: "247", label: "Active organisations" },
-          { value: "99.9%", label: "Uptime SLA" },
+          { value: "₦1.5M+", label: "Tracked this year" },
+          { value: "8", label: "Churches active" },
+          { value: "99.9%", label: "Uptime guaranteed" },
           { value: "<10s", label: "Per-transaction entry time" },
         ].map((m) => (
           <div key={m.label} className="rounded-xl border border-white/10 bg-white/5 p-6 text-center">
@@ -82,7 +82,7 @@ export default function SeedTrackerCaseStudy() {
       <section className="mb-20">
         <h2 className="text-2xl font-bold mb-2">The Problem</h2>
         <p className="text-gray-400 max-w-3xl">
-          Organisations across Nigeria were managing complex financial operations with
+          Churches across Nigeria were managing complex financial operations with
           spreadsheets, paper records and WhatsApp screenshots &mdash; leading to lost records,
           hours of manual reconciliation, zero financial transparency for stakeholders, and
           member data scattered across personal devices with no continuity when staff turnover occurred.
@@ -133,7 +133,7 @@ export default function SeedTrackerCaseStudy() {
         <ul className="space-y-3 text-gray-400 max-w-3xl">
           <li>&#9656; <span className="text-white">Payment reliability:</span> automatic failover between Paystack and Flutterwave ensures no transaction is ever lost, even during gateway outages.</li>
           <li>&#9656; <span className="text-white">Connectivity resilience:</span> offline-first sync architecture allows staff to keep working during unreliable internet, queuing writes locally.</li>
-          <li>&#9656; <span className="text-white">Data isolation at scale:</span> row-level security ensures 247+ organisations share infrastructure without any risk of cross-tenant data exposure.</li>
+          <li>&#9656; <span className="text-white">Data isolation at scale:</span> row-level security keeps each church's data separate on shared infrastructure, so the platform can grow without cross-tenant data exposure.</li>
           <li>&#9656; <span className="text-white">Regulatory compliance:</span> built-in PAYE, pension and NHF payroll calculations aligned with Nigerian statutory requirements.</li>
         </ul>
       </section>
@@ -141,8 +141,8 @@ export default function SeedTrackerCaseStudy() {
       <section className="mb-20">
         <h2 className="text-2xl font-bold mb-4">Outcome</h2>
         <p className="text-gray-400 max-w-3xl">
-          SeedTracker is live in production, processing over &#8358;2.4 billion in transactions
-          across 247 active organisations with a 99.9% uptime SLA. The platform replaced manual
+          SeedTracker is live in production with 8 churches, tracking over &#8358;1.5M this year
+          with 99.9% uptime guaranteed. The platform replaced manual
           spreadsheet reconciliation with real-time automated processing, cutting weekly admin
           time from hours to minutes while giving end-users full visibility into their transaction
           history for the first time.

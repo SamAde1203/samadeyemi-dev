@@ -19,6 +19,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "testing-without-llms",
     "cost-engineering",
     "cost-optimization",
+    "drupal-11-return",
+    "drupal-accessibility",
   ];
 
   const projectSlugs = [

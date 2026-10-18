@@ -44,6 +44,10 @@ export type ArticleData = {
   title: string;
   subtitle: string;
   readTime: string;
+  /** Series name shown in the hero and footer. Defaults to the PHHM Journal. */
+  series?: string;
+  /** Theme shown in the hero stats. Defaults to "Production AI". */
+  theme?: string;
   blocks: ArticleBlock[];
 };
 
@@ -222,6 +226,7 @@ function Block({ block }: { block: ArticleBlock }) {
 
 export default function ArticleShell({ article }: { article: ArticleData }) {
   const Icon = ICONS[article.icon] ?? BookOpen;
+  const series = article.series ?? "PHHM Journal";
 
   // group blocks into sections split at each h2
   type Section = { id: string; title: string | null; blocks: ArticleBlock[] };
@@ -241,8 +246,8 @@ export default function ArticleShell({ article }: { article: ArticleData }) {
   const stats = [
     { label: "Focus", value: article.focus },
     { label: "Read time", value: article.readTime },
-    { label: "Series", value: "PHHM Journal" },
-    { label: "Theme", value: "Production AI" },
+    { label: "Series", value: series },
+    { label: "Theme", value: article.theme ?? "Production AI" },
   ];
 
   return (
@@ -336,7 +341,7 @@ export default function ArticleShell({ article }: { article: ArticleData }) {
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <LineChart className="h-4 w-4 text-[var(--accent)]" />
-              PHHM Journal • Production AI Series
+              {series === "PHHM Journal" ? "PHHM Journal • Production AI Series" : series}
             </div>
             <div className="flex flex-wrap gap-3">
               <a

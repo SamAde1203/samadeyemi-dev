@@ -149,6 +149,17 @@ export default function CouncilServicesCaseStudy() {
         <p className="text-gray-400 max-w-3xl mb-4">
           A working council service that installs with one command, passes its tests and accessibility checks on every push, and keeps answering residents when the postcode service fails. The tests caught two real bugs before release: a crash on a second search and stale results showing beside a new error.
         </p>
+        <p className="text-gray-400 max-w-3xl mb-4">
+          Read more:{" "}
+          <Link href="/blog/drupal-11-return" className="text-cyan-300 hover:underline">
+            Back to Drupal after ten years
+          </Link>{" "}
+          and{" "}
+          <Link href="/blog/drupal-accessibility" className="text-cyan-300 hover:underline">
+            Accessibility as a build requirement
+          </Link>
+          .
+        </p>
         <p className="text-gray-500 text-sm max-w-3xl">
           Portfolio project: &ldquo;Demo City Council&rdquo; is fictional and collection dates come from demonstration data. Postcode data from postcodes.io under the Open Government Licence.
         </p>

@@ -144,3 +144,25 @@ export const articles: ArticleMeta[] = [
       "The cheapest AI call is the one you never make — prompt compression, intelligent routing, caching, and parallel execution that made PHHM economically sustainable.",
   },
 ];
+
+/** Standalone posts outside the PHHM series, shown in their own section on /blog. */
+export const drupalArticles: ArticleMeta[] = [
+  {
+    slug: "drupal-11-return",
+    part: 1,
+    title: "Back to Drupal After Ten Years: Building a Council Service in Drupal 11",
+    focus: "Drupal 11",
+    readTime: "9 min",
+    description:
+      "What changed after a decade away: hook classes, PHP attributes, services behind interfaces, designing for API outages, and two bugs the tests caught.",
+  },
+  {
+    slug: "drupal-accessibility",
+    part: 2,
+    title: "Accessibility as a Build Requirement: WCAG 2.2 AA Checks in a Drupal CI Pipeline",
+    focus: "Accessibility",
+    readTime: "8 min",
+    description:
+      "axe-core and Playwright check five page states on every push. What they caught, the GOV.UK patterns I followed, and what automation can't tell you.",
+  },
+];
