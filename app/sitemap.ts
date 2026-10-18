@@ -26,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const projectSlugs = [
     "alphawings",
     "council-services",
+    "find-my-service",
     "localgov-microsite",
     "phhm",
     "seedtracker",

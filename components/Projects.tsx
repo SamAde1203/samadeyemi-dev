@@ -29,6 +29,16 @@ const flagships = [
 
 const projects = [
   {
+    slug: "find-my-service",
+    tag: "Grounded answers • Guardrails • 53 eval questions",
+    title: "Find My Service",
+    description:
+      "An AI assistant that answers residents' questions from a council's own pages, citing every source, with guardrails, a cost cap and evaluations in CI.",
+    stack: ["Python", "FastAPI", "Claude API", "pytest", "Docker"],
+    demo: "#",
+    code: "https://github.com/SamAde1203/find-my-service",
+  },
+  {
     slug: "localgov-microsite",
     tag: "LocalGov Drupal • WCAG 2.2 AA audit • 42 tests",
     title: "Demo City Council on LocalGov Drupal",

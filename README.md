@@ -10,6 +10,7 @@ Personal portfolio site showcasing full-stack and AI engineering projects, built
 - **SeedTracker** — Multi-tenant church finance platform, live with 8 churches across Nigeria and ₦1.5M+ tracked this year.
 - **PHHM Multi-Agent AI Platform** — Six-agent Generative AI orchestration system reducing manual processing time by 85%.
 - **Alpha Wings AI (Post Booster)** — GPT-4-powered SaaS generating multi-platform social content, serving 500+ users.
+- **Find My Service** — FastAPI assistant that answers residents' questions from a council's own pages with citations, input/output guardrails, a daily cost cap and an evaluation set (with held-out questions) in CI ([code](https://github.com/SamAde1203/find-my-service)).
 - **Demo City Council on LocalGov Drupal** — LocalGov Drupal 11 council site with a custom Accessible Formats module and a WCAG 2.2 AA audit (10 findings fixed), 42 PHPUnit tests and accessibility checks in CI ([code](https://github.com/SamAde1203/localgov-council-microsite)).
 - **Council Services on Drupal 11** — Custom Drupal 11 module and WCAG 2.2 AA theme for a fictional council's bin day finder, with 26 PHPUnit tests and automated accessibility checks in CI ([code](https://github.com/SamAde1203/council-services-drupal)).
 - **TDCT Validator** — Python/YAML framework running 20+ automated checks on clinical trial protocols (MIT licensed).
