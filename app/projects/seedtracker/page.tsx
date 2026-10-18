@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 
 const stack = [
-  "Next.js", "React", "TypeScript", "Node.js", "PostgreSQL",
+  "React", "Vite", "TypeScript", "Node.js", "NestJS", "Python", "FastAPI", "PostgreSQL", "Redis",
   "Paystack", "Flutterwave", "WhatsApp Business API", "Claude AI",
 ];
 

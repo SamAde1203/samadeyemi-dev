@@ -11,7 +11,7 @@ const flagships = [
     title: "SeedTracker",
     description:
       "Multi-tenant church finance platform, live with churches across Nigeria — dual-gateway payments, offline-first sync, WhatsApp-native notifications and AI engagement predictions.",
-    stack: ["Next.js", "React", "TypeScript", "Paystack", "Flutterwave", "Claude AI"],
+    stack: ["React", "TypeScript", "NestJS", "FastAPI", "PostgreSQL", "Paystack", "Claude AI"],
     demo: "https://seedtracker.ng",
     code: "https://github.com/SamAde1203",
   },
