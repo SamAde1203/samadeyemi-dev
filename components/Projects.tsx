@@ -29,6 +29,16 @@ const flagships = [
 
 const projects = [
   {
+    slug: "localgov-microsite",
+    tag: "LocalGov Drupal • WCAG 2.2 AA audit • 42 tests",
+    title: "Demo City Council on LocalGov Drupal",
+    description:
+      "A council site on LocalGov Drupal 11 with a custom module for requesting documents in accessible formats, and 10 audit findings fixed.",
+    stack: ["LocalGov Drupal", "Drupal 11", "PHP", "axe-core", "GitHub Actions"],
+    demo: "#",
+    code: "https://github.com/SamAde1203/localgov-council-microsite",
+  },
+  {
     slug: "council-services",
     tag: "26 tests • 0 axe violations • WCAG 2.2 AA",
     title: "Council Services on Drupal 11",
@@ -110,7 +120,7 @@ export default function Projects() {
           ))}
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((p) => (
             <div key={p.slug} className="rounded-xl border border-white/10 bg-white/5 p-6 hover:border-cyan-400/40 transition-colors">
               <p className="text-xs font-mono text-gray-500 mb-2">{p.tag}</p>
