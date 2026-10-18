@@ -46,10 +46,11 @@ const screenshots = [
 ];
 
 const scores = [
-  ["Right outcome", "100%", "100%"],
-  ["Right page in top 3 results", "100%", "100%"],
-  ["Answer cites the right page", "97%", "90%"],
-  ["Safety cases", "100%", "100%"],
+  ["Right outcome", "100%", "100%", "100%", "100%"],
+  ["Right page in top 3 results", "100%", "100%", "100%", "100%"],
+  ["Answer cites the right page", "100%", "100%", "97%", "90%"],
+  ["Answer contains the key fact", "100%", "100%", "80%", "1 case"],
+  ["Safety cases", "100%", "100%", "100%", "100%"],
 ];
 
 export default function FindMyServiceCaseStudy() {
@@ -88,8 +89,8 @@ export default function FindMyServiceCaseStudy() {
 
       <section className="grid md:grid-cols-3 gap-6 mb-20">
         {[
-          { value: "53", label: "evaluation questions, including 14 held out from tuning" },
-          { value: "100%", label: "of safety cases handled correctly: emergencies, injection, off-topic" },
+          { value: "100%", label: "of safety cases handled: emergencies, prompt injection, off-topic" },
+          { value: "53/53", label: "questions answered correctly by Claude, including 14 held out from tuning" },
           { value: "44", label: "automated tests, with no network or API calls" },
         ].map((m) => (
           <div key={m.label} className="rounded-xl border border-white/10 bg-white/5 p-6 text-center">
@@ -156,23 +157,26 @@ export default function FindMyServiceCaseStudy() {
       <section className="mb-20">
         <h2 className="text-2xl font-bold mb-2">Evaluation Results</h2>
         <p className="text-gray-400 max-w-3xl mb-6">
-          Scores for the no-AI fallback, which runs in CI because it is free and repeatable. The held-out questions were written after tuning and never used to change the search, so they show how it handles wording it hasn&apos;t seen.
+          With Claude Haiku, every one of the 53 questions passed, including the 14 held-out questions written after tuning and never used to change anything. All of them together cost about a third of a US cent. The no-AI fallback runs on every push because it is free and repeatable.
         </p>
         <div className="overflow-x-auto rounded-xl border border-white/10">
           <table className="w-full text-sm text-left">
             <thead className="bg-white/5 text-white">
               <tr>
                 <th scope="col" className="p-3">Measure</th>
-                <th scope="col" className="p-3">Main set (39)</th>
-                <th scope="col" className="p-3">Held-out set (14)</th>
+                <th scope="col" className="p-3">Claude: main (39)</th>
+                <th scope="col" className="p-3">Claude: held-out (14)</th>
+                <th scope="col" className="p-3">No AI: main</th>
+                <th scope="col" className="p-3">No AI: held-out</th>
               </tr>
             </thead>
             <tbody className="text-gray-400">
-              {scores.map(([name, main, held]) => (
+              {scores.map(([name, ...values]) => (
                 <tr key={name} className="border-t border-white/10">
                   <td className="p-3">{name}</td>
-                  <td className="p-3 font-mono text-cyan-200">{main}</td>
-                  <td className="p-3 font-mono text-cyan-200">{held}</td>
+                  {values.map((v, i) => (
+                    <td key={i} className={`p-3 font-mono ${i < 2 ? "text-cyan-200" : "text-gray-500"}`}>{v}</td>
+                  ))}
                 </tr>
               ))}
             </tbody>
@@ -183,7 +187,7 @@ export default function FindMyServiceCaseStudy() {
       <section className="mb-20">
         <h2 className="text-2xl font-bold mb-4">Outcome</h2>
         <p className="text-gray-400 max-w-3xl mb-4">
-          The evaluations earned their place while I built it: they caught a stemming bug where &ldquo;potholes&rdquo; didn&apos;t match &ldquo;pothole&rdquo;, and an emergency rule that would have treated &ldquo;end my tenancy&rdquo; as a crisis. Both are fixed and covered by tests.
+          The evaluations earned their place. While I built it they caught a stemming bug where &ldquo;potholes&rdquo; didn&apos;t match &ldquo;pothole&rdquo;, and an emergency rule that would have treated &ldquo;end my tenancy&rdquo; as a crisis. The first live run with Claude scored 36 of 39, and all three failures were in my retrieval code, not the model. After fixing them, it scored 39 of 39, and 14 of 14 on questions it had never been tuned on.
         </p>
         <p className="text-gray-400 max-w-3xl mb-4">
           It answers from the pages of my{" "}
@@ -193,7 +197,7 @@ export default function FindMyServiceCaseStudy() {
           , crawled and split into sections by its own ingestion tool.
         </p>
         <p className="text-gray-500 text-sm max-w-3xl">
-          Portfolio project: Demo City Council is fictional. Next steps: live evaluation with Claude, embedding search for vaguer questions, and a shared store for limits when running several instances.
+          Portfolio project: Demo City Council is fictional. Next steps: embedding search for vaguer questions, and a shared store for limits when running several instances.
         </p>
       </section>
 
