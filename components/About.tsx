@@ -87,7 +87,7 @@ export default function About() {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Publications</span>
-                  <span className="text-cyan-300">2 + 1 Peer Review</span>
+                  <span className="text-cyan-300">2 peer-reviewed + 1 preprint</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">SC Clearance</span>

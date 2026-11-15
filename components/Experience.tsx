@@ -6,6 +6,7 @@ const timeline = [
   { year: "2024", title: "HUNTER Clinical Trial Platform", desc: "Founded and led technical development of an AI-assisted clinical trial platform with protocol validation." },
   { year: "2025", title: "TDCT Validator & Zenodo Publication", desc: "Built a 20+ rule automated validation engine and published as a Zenodo preprint." },
   { year: "2026", title: "Springer Nature Publication", desc: "Published \"Governance and Legitimacy in AI\" in Springer Nature's AI and Ethics journal." },
+  { year: "2026", title: "Trials Publication", desc: "Published a generalised additive model and change-point analysis of 134,724 registered clinical trials in Trials (BMC, Springer Nature)." },
   { year: "2026", title: "PHHM Multi-Agent AI Platform", desc: "Architected a six-agent Generative AI ecosystem, cutting workflow time by 85% and errors by 73%." },
 ];
 

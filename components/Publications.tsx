@@ -5,6 +5,12 @@ import { BookOpen, ExternalLink, Award } from "lucide-react";
 
 const pubs = [
   {
+    title: "Structural Thresholds and Nonlinear Acceleration in Clinical Trial Failure: A Generalised Additive Model and Change-Point Analysis of 134,724 Registered Trials (2016–2025)",
+    venue: "Trials (BMC, Springer Nature), 2026",
+    doi: "10.1186/s13063-026-10044-7",
+    type: "Journal Article",
+  },
+  {
     title: "Governance and Legitimacy in AI: Developing and Testing the AI Authorship Legitimacy Model",
     venue: "Springer Nature — AI and Ethics, 2026",
     doi: "10.1007/s43681-026-01162-8",
@@ -31,7 +37,7 @@ export default function Publications() {
         <p className="font-mono text-cyan-400 text-sm mb-2">05 / PUBLICATIONS</p>
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Published Research</h2>
         <p className="text-muted-foreground text-lg max-w-2xl mb-8">
-          Peer-reviewed research at the intersection of AI governance, ethics, and validation systems.
+          Peer-reviewed research on AI governance, clinical trial failure and validation systems.
         </p>
 
         <div className="space-y-4">

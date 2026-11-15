@@ -14,7 +14,7 @@ const highlights = [
   },
   {
     icon: BookOpen,
-    text: "Published in Springer Nature — AI & Ethics",
+    text: "Published in Springer Nature — AI and Ethics and Trials",
   },
   {
     icon: ShieldCheck,
